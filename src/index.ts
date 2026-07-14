@@ -1,3 +1,4 @@
-export * from "./configuration/api.ts";
-export * from "./configuration/web.ts";
-export * from "./configuration/database.ts";
+export * from "./configuration/api.js";
+export * from "./configuration/web.js";
+export * from "./configuration/database.js";
+
