@@ -8,4 +8,8 @@ export class ApiConfiguration {
     clientSecret: process.env.KEYCLOAK_CLIENT_SECRET!,
     issuer: process.env.KEYCLOAK_ISSUER!,
   } as const;
+
+  public static readonly redis = {
+    url: process.env.URLS_REDIS!,
+  } as const;
 }
