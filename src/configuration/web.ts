@@ -1,10 +1,7 @@
-if (!process.env.URLS_API)
-  throw new Error("Missing environment variable: URLS_API");
-
 export class WebConfiguration {
   public static readonly addresses = {
-    api: process.env.URLS_API,
-    gateway: process.env.URLS_GATEWAY,
+    api: process.env.URLS_API!,
+    gateway: process.env.URLS_GATEWAY!,
   } as const;
 }
 
